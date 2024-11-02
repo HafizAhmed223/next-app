@@ -6,6 +6,10 @@ const config: Config = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  // content: [
+  //   "./pages/**/*.{js,ts,jsx,tsx}",
+  //   "./components/**/*.{js,ts,jsx,tsx}"
+  // ],
   theme: {
     extend: {
       backgroundImage: {
@@ -15,6 +19,11 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('daisyui'),
+  ],
+  daisyui: {
+    themes: ["winter"],
+  },
 }
 export default config
